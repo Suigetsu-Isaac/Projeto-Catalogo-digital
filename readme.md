@@ -1,9 +1,9 @@
 
-instalando o tailwind
+ <p> instalando o tailwind </p>
 `
  npm install -D tailwindcss
 `
-iniciando a configuração do tailwind
+<p>iniciando a configuração do tailwind</p>
 `
 npx tailwindcss init
 `
