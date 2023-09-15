@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Header</title>
+</head>
+<body>
+    <header id="menu" class="flex justify-around items-center p-2 bg-3-backgroundMenu text-0-primaryTextColor fixed top-0 left-0 w-full">
+        <a href="#" class="px-2 " >Pagina Principal</a>
+        <a href="#" class="px-2">Contato</a>
+        <div class="flex">
+        <input type="text" class="px-2 w-80 h-10 rounded-lg bg-0-secoundBackground">
+        <img src="./imgs/lupa.png" width="40px" height="30px" class="absolute left-16">
+        </div>
+        <div>
+        
+        <a href="#">
+                <div class="bg-0-secoundBackground h-16 w-40 rounded-lg flex justify-center items-center">
+            <span class="text-3-inversionTextColor text-lg">Acessar Conta</span>
+        </div>
+    </a>
+    </header>
+
+
+
+
+
+    <script onload>
+        const file = document.querySelector("#menu");
+        const elements = file.innerHTML;
+        const styles = file.classList;
+        const bar = {styles :styles , elements : elements}
+                    
+                
+        localStorage.setItem("menu-bar",JSON.stringify(bar));
+    </script>
+</body>
+</html>
